@@ -147,9 +147,9 @@ h1{font-family:'DM Serif Display',serif;font-size:clamp(3rem,6vw,5.2rem);font-we
 .cta p{font-size:1.05rem;color:rgba(255,255,255,.45);line-height:1.8;margin-bottom:48px;font-weight:300}
 .cta-contacts{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:20px;flex-wrap:wrap}
 .cta-note{font-size:.78rem;color:rgba(255,255,255,.2)}
-.cta-email{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:.9rem;text-decoration:none;transition:color .2s}
-.cta-email:hover{color:rgba(255,255,255,.8)}
-.cta-sep{color:rgba(255,255,255,.15);font-size:.9rem}
+
+
+
 
 /* FOOTER */
 footer{background:#040C1E;border-top:1px solid rgba(255,255,255,.05);padding:32px 56px}
@@ -582,10 +582,7 @@ footer p{font-size:.82rem;color:rgba(255,255,255,.2)}
       Falar com a FlowTech
     </a>
     <div class="cta-contacts">
-      <a href="/cdn-cgi/l/email-protection#016474736e63736072686d626e6f72746d756e73686041666c60686d2f626e6c" class="cta-email">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
-        <span class="__cf_email__" data-cfemail="0f6a7a7d606d7d6e7c66636c60617c7a637b607d666e4f68626e6663216c6062">[email&#160;protected]</span>
-      </a>
+      
       <span class="cta-note">Resposta em até 2 horas</span>
     </div>
   </div>
@@ -600,7 +597,7 @@ footer p{font-size:.82rem;color:rgba(255,255,255,.2)}
       <a href="#servicos">Serviços</a>
       <a href="#precos">Preços</a>
       <a href="https://wa.me/34614478617" target="_blank">WhatsApp</a>
-      <a href="/cdn-cgi/l/email-protection#5e3b2b2c313c2c3f2d37323d31302d2b322a312c373f1e39333f3732703d3133">E-mail</a>
+      
     </div>
   </div>
 </footer>
@@ -633,16 +630,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Email link — assembled at runtime to avoid Cloudflare obfuscation
-var el = document.getElementById('emailLink');
-if (el) {
-  el.addEventListener('click', function(e) {
-    e.preventDefault();
-    var u = 'eurobrasilconsultoria';
-    var d = 'gmail.com';
-    window.location.href = 'mai' + 'lto:' + u + '@' + d;
-  });
-}
 </script>
 </body>
 </html>
