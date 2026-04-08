@@ -632,6 +632,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+// Email link — assembled at runtime to avoid Cloudflare obfuscation
+var el = document.getElementById('emailLink');
+if (el) {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    var u = 'eurobrasilconsultoria';
+    var d = 'gmail.com';
+    window.location.href = 'mai' + 'lto:' + u + '@' + d;
+  });
+}
 </script>
 </body>
 </html>
